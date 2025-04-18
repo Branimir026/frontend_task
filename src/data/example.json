@@ -1,0 +1,66 @@
+{
+    "data": {
+      "comments": [
+        {
+          "id": "1",
+          "parent_id": null,
+          "author": {
+            "name": "Ivan Martic",
+            "picture": "img/ivan.png"
+          },
+          "text": "Hello guys! How's everyone doing?",
+          "timestamp": 1607862300000
+        },
+        {
+          "id": "2",
+          "parent_id": null,
+          "author": {
+            "name": "Stjepan Liovic",
+            "picture": "img/stjepan.png"
+          },
+          "text": "i would suggest having a a look at this new tool! https://www.unitconverters.net/length/miles-to-km.htm",
+          "timestamp": 1607871660000
+        },
+        {
+          "id": "3",
+          "parent_id": "2",
+          "author": {
+            "name": "Martin Durkovic",
+            "picture": "img/martin.png"
+          },
+          "text": "Thanks! Will have a look.",
+          "timestamp": 1607872200000
+        },
+        {
+          "id": "4",
+          "parent_id": "3",
+          "author": {
+            "name": "Srdjan",
+            "picture": "img/ivan.png"
+          },
+          "text": "Hello",
+          "timestamp": 1699968396215
+        },
+        {
+          "id": "5",
+          "parent_id": "2",
+          "author": {
+            "name": "Srdjan",
+            "picture": "img/ivan.png"
+          },
+          "text": "Whats up",
+          "timestamp": 1699968406978
+        },
+        {
+          "id": "6",
+          "parent_id": null,
+          "author": {
+            "name": "Srdjan",
+            "picture": "img/ivan.png"
+          },
+          "text": "Hey",
+          "timestamp": 1699968422698
+        }
+      ]
+    }
+  }
