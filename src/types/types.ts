@@ -9,5 +9,6 @@ export type CommentType = {
     author: Author;
     text: string;
     timestamp: number;
+    children?: CommentType[];
 };
 

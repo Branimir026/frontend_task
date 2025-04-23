@@ -6,4 +6,21 @@ import HomeView from '@/views/HomeView.vue'
     <HomeView />
 </template>
 
-<style scoped></style>
+<style>
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+</style>

@@ -1,31 +1,27 @@
 <template>
     <div class="commentsList">
-        <Comment v-for="(comment, index) in commentsList" :key="index" :comment="comment" />
+        <Comment v-for="comment in sortedComments" :key="comment.id" :comment="comment" />
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { computed } from 'vue';
 
 import Comment from './Comment.vue';
 
-import type { CommentType } from '@/types/types';
 
-const props = defineProps({
-    comments: {
-        type: Array as () => CommentType[],
-        required: true
-    }
-})
+import { useCommentsStore } from '@/stores/commentsStore';
 
-const commentsList = ref(props.comments);
-console.log(commentsList.value);
+const commentsStore = useCommentsStore();
+
+const sortedComments = computed(() => commentsStore.sortedComments);
+
+console.log('Sorted Comments:', sortedComments.value);
 
 </script>
 
 <style scoped>
-.commentList {
-    display: flex;
-    flex-direction: column;
+.commentsList {
+    margin-bottom: 1rem;
 }
 </style>
